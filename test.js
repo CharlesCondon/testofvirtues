@@ -5,9 +5,17 @@ $(document).ready(function() {
   $('#calculate').click(function() {
     var checkboxes = $('input:checkbox:checked').length;
     var virtue = 100 - checkboxes;
-    virtue = virtue + "%";
-    $('#total').html(virtue);
+    var final = virtue + "%";
+    $('#total').html(final);
     $("#results").show();            
     $("#test").hide();
+    
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'Score',
+      eventAction: 'Total',
+      eventLabel: virtue.toString(),
+      eventValue: virtue
+    });
   })
 });
