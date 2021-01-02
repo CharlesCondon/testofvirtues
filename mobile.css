@@ -1,0 +1,337 @@
+/* CSS files add styling rules to your content */
+
+body {
+  background-color: rgb(252, 118, 106, 1);
+  font-family: 'Righteous', cursive;  
+  margin: 1em;
+}
+
+h1 {
+  color: rgb(0, 0, 128, .6);
+  text-shadow: -1px -1px 3px rgba(255, 255, 255, .2),
+               1px 1px 4px rgba(0, 0, 0, .5);  
+}
+
+h3 {
+  color: rgb(0, 0, 128, .6);
+  text-shadow: -1px -1px 3px rgba(255, 255, 255, .2),
+               1px 1px 4px rgba(0, 0, 0, .5);  
+}
+
+header {
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: -1px -1px 10px rgba(255, 255, 255, .5),
+              3px 3px 12px rgba(70, 70, 70, .5);
+}
+
+main {
+  padding-bottom: 8rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+  margin: 30px auto 0 auto;
+  opacity: .75;
+  border-radius: 10px;
+  box-shadow: inset -1px -1px 7px rgba(255, 255, 255, .3),
+              inset 3px 3px 10px rgba(70, 70, 70, .3); 
+}
+
+/* Welcome Page */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 75%;
+  text-align: center;
+}
+
+#inputs {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.container label input {
+  appearance: none;
+  -webkit-appearance: none;
+  curser: pointer;
+  opacity: 0;
+}
+
+.container label .fa {
+  color: rgb(0, 0, 0, .5);
+  box-shadow: -1px -1px 7px rgba(255, 255, 255, .3),
+              3px 3px 10px rgba(70, 70, 70, .3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  outline: none;
+  font-size: 30px;
+  margin: 0 20px;
+}
+
+.container label input:hover ~ .fa {
+  box-shadow: inset -2px -2px 10px rgba(255, 255, 255, .15),
+              inset 3px 3px 10px rgba(70, 70, 70, .15); 
+}
+
+.container label input:checked ~ .fa {
+  color: #00fff1;
+  box-shadow: inset -1px -1px 7px rgba(255, 255, 255, .4),
+              inset 3px 3px 10px rgba(70, 70, 70, .4);  
+}
+
+p {
+  font-size: 1.25em;
+  color: rgb(0, 0, 128, .6);
+  text-shadow: -1px -1px 3px rgba(255, 255, 255, .2),
+               1px 1px 4px rgba(0, 0, 0, .5);    
+}
+
+.response {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 130%;
+  left: 50%;
+  width: 100%;
+}
+
+.clickyes {
+  opacity: 0;
+}
+
+.clickyes2 {
+  transition: opacity 1s;
+  transition-timing-function: ease-in;  
+  opacity: 1;
+}
+
+.clickno {
+  opacity: 0;
+}
+
+.clickno2 {
+  transition: opacity 1s;
+  transition-timing-function: ease-in;  
+  opacity: 1;
+}
+
+/* Authentication */
+
+.social {
+  width: 100%;
+  background-color: rgb(255, 255, 255, .5);
+  border: 3px solid rgb(255, 255, 255, .5);
+  border-radius: 15px;
+  padding: 10px 0 10px 10px;
+  margin: auto;
+}
+
+.button {
+  width: 25%;
+  margin: 20px auto;
+  padding: 5px;
+  color: rgb(0, 0, 128, .6);
+  appearance: none;
+  -webkit-appearance: none;
+  curser: pointer;
+  border: none;
+  border-radius: 15px;
+  box-shadow: -1px -1px 7px rgba(255, 255, 255, .3),
+              3px 3px 10px rgba(70, 70, 70, .3);
+  font-size: 12px;
+}
+
+.button:hover {
+  box-shadow: inset -2px -2px 10px rgba(255, 255, 255, .15),
+              inset 3px 3px 10px rgba(70, 70, 70, .15); 
+}
+
+.button:checked {
+  color: #00fff1;
+  box-shadow: inset -1px -1px 7px rgba(255, 255, 255, .4),
+              inset 3px 3px 10px rgba(70, 70, 70, .4);  
+}
+
+.authResponse {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 110%;
+  left: 50%;
+  width: 100%;
+}
+
+.skip {
+  position: absolute;
+  bottom: 3%;
+  right: 8%;
+  width: 10%;
+  padding: 5px;
+  color: rgb(0, 0, 128, .6);
+  appearance: none;
+  -webkit-appearance: none;
+  curser: pointer;
+  border: none;
+  border-radius: 15px;
+  box-shadow: -1px -1px 7px rgba(255, 255, 255, .3),
+              3px 3px 10px rgba(70, 70, 70, .3);
+  font-size: 8px;
+  opacity: .7;
+}
+
+.skip:hover {
+  box-shadow: inset -2px -2px 10px rgba(255, 255, 255, .15),
+              inset 3px 3px 10px rgba(70, 70, 70, .15); 
+}
+
+.skip:checked {
+  color: #00fff1;
+  box-shadow: inset -1px -1px 7px rgba(255, 255, 255, .4),
+              inset 3px 3px 10px rgba(70, 70, 70, .4);  
+}
+
+.clickSubmit {
+  opacity: 0;
+}
+
+.clickSubmit2 {
+  transition: opacity 1s;
+  transition-timing-function: ease-in;  
+  opacity: 1;
+}
+
+.clickSkip {
+  opacity: 0;
+}
+
+.clickSkip2 {
+  transition: opacity 1s;
+  transition-timing-function: ease-in;  
+  opacity: 1;
+}
+
+/* Test Page */
+
+#pageContainer {
+  position: relative;
+  min-height: 96vh;
+}
+
+#headTitle {
+  font-size: 30px;
+}
+
+#author {
+  font-size: 10px;
+  margin:0;
+  position: absolute;
+  top: 13%;
+  right: 10.5%;
+}
+
+.text {
+  font-size: 15px;
+  text-align: center;
+}
+
+li {
+  margin: 15px 0;
+  font-family: 'Lato', sans-serif;
+}
+
+li input {
+  width: 20px;
+  height: 20px;
+  margin: 0 7px -3px 0;
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: rgb(255, 255, 255, .3);
+  curser: pointer;
+  border: none;
+  box-shadow: -1px -1px 7px rgba(255, 255, 255, .3),
+              3px 3px 10px rgba(70, 70, 70, .3);
+}
+
+li input:checked {
+  color: #00fff1;
+  box-shadow: inset -1px -1px 7px rgba(255, 255, 255, .2),
+              inset 1px 1px 10px rgba(0, 0, 0, .9); 
+}
+
+ol {
+  margin: 50px auto 30px auto;
+  color: rgb(0, 0, 128, .6);
+  text-shadow: -1px -1px 3px rgba(255, 255, 255, .1),
+               1px 1px 4px rgba(0, 0, 0, .3);
+  font-size: 20px;
+}
+
+#buttons {
+  margin: auto;
+  width: 85%;
+}
+
+#calculate {
+  padding: 4px 0;
+  margin: 0 0 20px 0;
+  font-family: 'Righteous', cursive; 
+  width: 100%;
+  color: rgb(0, 0, 128, .6);
+  appearance: none;
+  -webkit-appearance: none;
+  curser: pointer;
+  border: none;
+  border-radius: 15px;
+  background-color: rgb(0,0,0,0);
+  box-shadow: -1px -1px 7px rgba(255, 255, 255, .3),
+              3px 3px 10px rgba(70, 70, 70, .3);
+  font-size: 17px;
+}
+
+#calculate:hover {
+  box-shadow: inset -2px -2px 10px rgba(255, 255, 255, .15),
+              inset 3px 3px 10px rgba(70, 70, 70, .15); 
+}
+
+#calculate:active {
+  color: #00fff1;
+  box-shadow: inset -1px -1px 7px rgba(255, 255, 255, .4),
+              inset 3px 3px 10px rgba(70, 70, 70, .4);  
+}
+
+h2 {
+  font-size: 30px;
+}
+
+#total {
+  font-size: 50px;
+  width: 50%;
+  margin: auto;
+  border-radius: 25px;
+  box-shadow: -1px -1px 7px rgba(255, 255, 255, .3),
+              3px 3px 10px rgba(70, 70, 70, .3);
+}
+
+#results {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
